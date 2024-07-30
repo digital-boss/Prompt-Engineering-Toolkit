@@ -15,8 +15,8 @@ COPY . .
 
 # Create a .env file and set environment variables
 # Note: In a production environment, you should use secrets management instead
-RUN echo "REACT_APP_OPENAI_API_KEY=${REACT_APP_OPENAI_API_KEY}" > .env && \
-    echo "REACT_APP_ANTHROPIC_API_KEY=${REACT_APP_ANTHROPIC_API_KEY}" >> .env
+# RUN echo "REACT_APP_OPENAI_API_KEY=${REACT_APP_OPENAI_API_KEY}" > .env && \
+#     echo "REACT_APP_ANTHROPIC_API_KEY=${REACT_APP_ANTHROPIC_API_KEY}" >> .env
 
 # Build the application
 RUN npm run build
